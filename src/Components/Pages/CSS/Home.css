@@ -1,0 +1,326 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+.main{
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    margin: 0;
+    background-image: url('../../Images/clouds-8459053_1280.webp');
+    background-size: cover;
+    background-position: center;
+}
+.weatherStart{
+    height: 100%;
+    width: 100%;
+}
+
+/* -----NAVBAR----- */
+
+.navBar{
+    height: 80px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 6vw;
+    border-bottom: 2px solid #6b6a6a;
+}
+.navBar h1{
+    font-size: 1.6vw;
+}
+.navBar h1 img{
+    height: 5vw;
+}
+.lastNav{
+    display: flex;
+    align-items: center;
+    gap: 2vw;
+}
+.lastNav h3{
+    font-size: 1.1vw;
+}
+.lastNav i {
+    font-size: 2vw;
+    display: none;
+}
+.drop-DOWN{
+    display: none;
+}
+
+/* -----CONTENT----- */
+
+.content{
+    height: calc(100% - 80px);
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.weather{
+    height: 80%;
+    width: 60%;
+    border-radius: 3vw;
+    background: rgba(0, 0, 0, 0.4);
+    display: flex;
+}
+.data{
+    height: 100%;
+    width: 70%;
+}
+.cityName{
+    width: 100%;
+    height: 20%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.cityName h1{
+    font-size: 4vw;
+}
+.cityName h1 span{
+    color:#dddddd; ;
+}
+.space{
+    width: 100%;
+    height: 60%;
+}
+.space h3{
+    display: none;
+}
+.timeAndTemp{
+    width: 100%;
+    height:20%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 5%;
+}
+.time{
+    font-size: 1.3vw;
+}
+.temperature h1{
+    font-size: 5vw;
+    color: #dddddd;
+}
+
+
+
+
+
+
+.search{
+    height: 100%;
+    width: 30%;
+    border-left: 2px solid #6b6a6a;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.searchanddata{
+    height: 70%;
+    width: 100%;
+}
+.searchInput{
+    height: 40%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.searchInput input{
+    width: 90%;
+    height: 20%;
+    border-radius: 10px;
+    text-align: center;
+    background: rgba(0, 0, 0, 0.4);
+    color: #dddddd;
+}
+.searchInput button {
+    width: 3vw;
+    background-color:#dddddd;
+    margin-top: 10px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+}
+.searchInput button i{
+    font-size: 1.6vw;
+    margin-top: 10px; 
+    border-radius: 10px;
+}
+::placeholder{
+    color: #adadad;
+    font-size: 1vw;
+}
+
+.searchData{
+    height: 60%;
+    width: 100%;
+    padding: 0 10%;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: space-evenly;
+}
+.searchData li{
+    list-style: none;
+    font-size: 1.1vw;
+    font-weight: 600;
+    display: flex;
+    align-items:center;
+
+}
+.searchData li span{
+    position: absolute;
+    right: 23vw;
+}
+.searchData2{
+    display: none;
+}
+.searchhh{
+    height: 50%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.searchhh h3{
+    text-align: center;
+}
+.searchhh2{
+    text-align: center;
+}
+.temp{
+    color: #dddddd;
+}
+
+
+@media (max-width:600px) {
+    .navBar{
+        padding: 0 5vw;
+    }
+    .navBar h1{
+        font-size: 4vw;
+    }
+    .navBar h1 img{
+        height: 15vw;
+    }
+    .lastNav h3{
+        font-size: 3vw;
+        display: none;
+    }
+    .lastNav button{
+        background: none;
+        border: none;
+        color: #000000;
+    }
+    .lastNav i {
+        font-size: 9vw;
+        display: block;
+    }
+
+
+    .weather{
+        height: 90%;
+        width: 90%;
+        border-radius: 5vw;
+        display: flex;
+        flex-direction: column-reverse;
+    }
+    .search{
+        width: 100%;
+        height: 30%;
+        border-left: none;
+        border-bottom: 2px solid #000000;
+        padding: 10% 0;
+    }
+    .searchanddata{
+        height: 100%;
+        width: 100%;
+    }
+    .searchInput {
+        height: 100%;
+    }
+    .searchInput input{
+        height: 30%;
+        font-size: 16px;
+    } 
+    .searchInput button{
+        width: 20%;
+        background-color:#c4c4c4;
+    }
+    .searchInput button i{
+        color: #000000;
+        font-size: 4vw;
+    }
+    ::placeholder{
+        font-size: 3vw;
+        color: #a6a5a5;
+    }
+
+    .searchData{
+        display: none;
+    }
+
+    .searchhh{
+        display: none;
+    }
+    .searchhh2 h3{
+        display: block;
+        text-align: center;
+        font-size: 5vw;
+    }
+
+    .data{
+        width: 100%;
+        height: 70%;
+    }
+    .cityName{
+        width: 100%;
+        height: 20%;
+    }
+    .cityName h1{
+        font-size: 7vw;
+    }
+    .cityName h1 span{
+        color:#c4c4c4; ;
+    }
+    .space{
+        display: flex;
+        align-items: center;
+        padding: 0 15%;
+        line-height: 5vh;
+    }
+    .searchData2{
+        display: block;
+        font-size: 5vw;
+        font-weight: 600;
+    }
+    .searchData2 li{
+        list-style: none;
+    }
+    .searchData2 li span{
+        position: absolute;
+        right: 20vw;
+    }
+    .timeAndTemp{
+    }
+    .time{
+        font-size: 3vw;
+        font-weight: 600;
+    }
+    .temperature h1{
+        font-size: 16vw;
+        color: #c4c4c4;
+    }
+    .temp{
+        color: #c4c4c4;
+    }
+
+}
