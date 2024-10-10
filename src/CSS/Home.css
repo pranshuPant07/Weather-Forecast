@@ -1,27 +1,28 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family:Arial, Helvetica, sans-serif;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
-.main{
+.main {
     height: 100%;
     width: 100%;
     position: absolute;
     margin: 0;
-    background-image: url('../../Images/clouds-8459053_1280.webp');
+    background-image: url('../Images/clouds-8459053_1280.webp');
     background-size: cover;
     background-position: center;
 }
-.weatherStart{
+
+.weatherStart {
     height: 100%;
     width: 100%;
 }
 
 /* -----NAVBAR----- */
 
-.navBar{
+.navBar {
     height: 80px;
     width: 100%;
     display: flex;
@@ -30,80 +31,100 @@
     padding: 0 6vw;
     border-bottom: 2px solid #6b6a6a;
 }
-.navBar h1{
+
+.navBar h1 {
     font-size: 1.6vw;
 }
-.navBar h1 img{
+
+.navBar h1 img {
     height: 5vw;
 }
-.lastNav{
+
+.lastNav {
     display: flex;
     align-items: center;
     gap: 2vw;
 }
-.lastNav h3{
+
+.lastNav h3 {
     font-size: 1.1vw;
 }
+
 .lastNav i {
     font-size: 2vw;
     display: none;
 }
-.drop-DOWN{
+
+.drop-DOWN {
     display: none;
 }
 
 /* -----CONTENT----- */
 
-.content{
+.content {
     height: calc(100% - 80px);
     width: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
 }
-.weather{
+
+.weather {
     height: 80%;
     width: 60%;
     border-radius: 3vw;
     background: rgba(0, 0, 0, 0.4);
     display: flex;
 }
-.data{
+
+.data {
     height: 100%;
     width: 70%;
 }
-.cityName{
+
+.cityName {
     width: 100%;
     height: 20%;
     display: flex;
     align-items: center;
     justify-content: center;
 }
-.cityName h1{
+
+.cityName h1 {
     font-size: 4vw;
+    color:  #e6e6e6 ;
+    
 }
-.cityName h1 span{
-    color:#dddddd; ;
+
+.cityName h1 span {
+    color: #c3c3c3;
+    ;
 }
-.space{
+
+.space {
     width: 100%;
     height: 60%;
 }
-.space h3{
+
+.space h3 {
     display: none;
 }
-.timeAndTemp{
+
+.timeAndTemp {
     width: 100%;
-    height:20%;
+    height: 20%;
     display: flex;
     align-items: center;
     justify-content: space-between;
     padding: 0 5%;
+    color: #d4d3d3;
 }
-.time{
+
+.time {
     font-size: 1.3vw;
 }
-.temperature h1{
+
+.temperature h1 {
     font-size: 5vw;
     color: #dddddd;
 }
@@ -113,7 +134,7 @@
 
 
 
-.search{
+.search {
     height: 100%;
     width: 30%;
     border-left: 2px solid #6b6a6a;
@@ -121,11 +142,13 @@
     align-items: center;
     justify-content: center;
 }
-.searchanddata{
+
+.searchanddata {
     height: 70%;
     width: 100%;
 }
-.searchInput{
+
+.searchInput {
     height: 40%;
     width: 100%;
     display: flex;
@@ -133,33 +156,38 @@
     justify-content: center;
     flex-direction: column;
 }
-.searchInput input{
+
+.searchInput input {
     width: 90%;
-    height: 20%;
+    height: 35%;
     border-radius: 10px;
+    font-size: 16px;
     text-align: center;
     background: rgba(0, 0, 0, 0.4);
     color: #dddddd;
 }
+
 .searchInput button {
     width: 3vw;
-    background-color:#dddddd;
+    background-color: #dddddd;
     margin-top: 10px;
     border: none;
     border-radius: 10px;
     cursor: pointer;
 }
-.searchInput button i{
+
+.searchInput button i {
     font-size: 1.6vw;
-    margin-top: 10px; 
+    margin-top: 10px;
     border-radius: 10px;
 }
-::placeholder{
+
+::placeholder {
     color: #adadad;
     font-size: 1vw;
 }
 
-.searchData{
+.searchData {
     height: 60%;
     width: 100%;
     padding: 0 10%;
@@ -168,158 +196,191 @@
     align-items: start;
     justify-content: space-evenly;
 }
-.searchData li{
+
+.searchData li {
     list-style: none;
     font-size: 1.1vw;
     font-weight: 600;
     display: flex;
-    align-items:center;
+    align-items: center;
+    color:rgb(255, 255, 255) ;
 
 }
-.searchData li span{
+
+.searchData li span {
     position: absolute;
     right: 23vw;
 }
-.searchData2{
+
+.searchData2 {
     display: none;
 }
-.searchhh{
+
+.searchhh {
     height: 50%;
     width: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
 }
-.searchhh h3{
+
+.searchhh h3 {
+    text-align: center;
+    color: #d4d3d3;
+}
+
+.searchhh2 {
     text-align: center;
 }
-.searchhh2{
-    text-align: center;
-}
-.temp{
-    color: #dddddd;
+
+.temp {
+    color: #dbdada;
 }
 
 
 @media (max-width:600px) {
-    .navBar{
+    .navBar {
         padding: 0 5vw;
     }
-    .navBar h1{
+
+    .navBar h1 {
         font-size: 4vw;
     }
-    .navBar h1 img{
+
+    .navBar h1 img {
         height: 15vw;
     }
-    .lastNav h3{
+
+    .lastNav h3 {
         font-size: 3vw;
         display: none;
     }
-    .lastNav button{
+
+    .lastNav button {
         background: none;
         border: none;
         color: #000000;
     }
+
     .lastNav i {
         font-size: 9vw;
         display: block;
     }
 
 
-    .weather{
+    .weather {
         height: 90%;
         width: 90%;
         border-radius: 5vw;
         display: flex;
         flex-direction: column-reverse;
     }
-    .search{
+
+    .search {
         width: 100%;
         height: 30%;
         border-left: none;
         border-bottom: 2px solid #000000;
         padding: 10% 0;
     }
-    .searchanddata{
+
+    .searchanddata {
         height: 100%;
         width: 100%;
     }
+
     .searchInput {
         height: 100%;
     }
-    .searchInput input{
+
+    .searchInput input {
         height: 30%;
         font-size: 16px;
-    } 
-    .searchInput button{
-        width: 20%;
-        background-color:#c4c4c4;
     }
-    .searchInput button i{
+
+    .searchInput button {
+        width: 20%;
+        background-color: #c4c4c4;
+    }
+
+    .searchInput button i {
         color: #000000;
         font-size: 4vw;
     }
-    ::placeholder{
+
+    ::placeholder {
         font-size: 3vw;
         color: #a6a5a5;
     }
 
-    .searchData{
+    .searchData {
         display: none;
     }
 
-    .searchhh{
+    .searchhh {
         display: none;
     }
-    .searchhh2 h3{
+
+    .searchhh2 h3 {
         display: block;
         text-align: center;
         font-size: 5vw;
     }
 
-    .data{
+    .data {
         width: 100%;
         height: 70%;
     }
-    .cityName{
+
+    .cityName {
         width: 100%;
         height: 20%;
     }
-    .cityName h1{
+
+    .cityName h1 {
         font-size: 7vw;
     }
-    .cityName h1 span{
-        color:#c4c4c4; ;
+
+    .cityName h1 span {
+        color: #c4c4c4;
+        ;
     }
-    .space{
+
+    .space {
         display: flex;
         align-items: center;
         padding: 0 15%;
         line-height: 5vh;
     }
-    .searchData2{
+
+    .searchData2 {
         display: block;
         font-size: 5vw;
         font-weight: 600;
     }
-    .searchData2 li{
+
+    .searchData2 li {
         list-style: none;
     }
-    .searchData2 li span{
+
+    .searchData2 li span {
         position: absolute;
         right: 20vw;
     }
-    .timeAndTemp{
-    }
-    .time{
+
+    .timeAndTemp {}
+
+    .time {
         font-size: 3vw;
         font-weight: 600;
     }
-    .temperature h1{
+
+    .temperature h1 {
         font-size: 16vw;
         color: #c4c4c4;
     }
-    .temp{
+
+    .temp {
         color: #c4c4c4;
     }
 
