@@ -104,6 +104,16 @@
 .space {
     width: 100%;
     height: 60%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.space h1{
+    color: #d4d4d4;
+}
+.space h4{
+    color: #d4d4d4; 
 }
 
 .space h3 {
