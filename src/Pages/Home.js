@@ -95,19 +95,17 @@ function Home() {
 
     try {
       const weatherResponse = await axios.get(`https://api.openweathermap.org/data/2.5/weather?units=metric&q=${state.city}&appid=${api_KEY}`);
-      console.log('Weather Response:', weatherResponse.data); // Debug log
 
       if (weatherResponse.status === 200) {
         const { lat, lon } = weatherResponse.data.coord;
         const pollutionResponse = await axios.get(`https://api.openweathermap.org/data/2.5/air_pollution?lat=${lat}&lon=${lon}&appid=${api_KEY}`);
-        console.log('Pollution Response:', pollutionResponse.data); // Debug log
 
         const components = pollutionResponse.data.list[0].components;
         const { co, nh3, no, no2, o3, pm2_5, pm10, so2 } = components;
-        console.log('Pollutants:', { co, nh3, no, no2, o3, pm2_5, pm10, so2 }); // Debug log
+        // console.log('Pollutants:', { co, nh3, no, no2, o3, pm2_5, pm10, so2 }); // Debug log
 
         const OverallAQI = calculateAQI({ co, nh3, no, no2, o3, pm2_5, pm10, so2 });
-        console.log('Calculated AQI:', OverallAQI); // Debug log
+        // console.log('Calculated AQI:', OverallAQI); // Debug log
 
         let quality = '';
         if (OverallAQI <= 50) quality = "GOOD";
