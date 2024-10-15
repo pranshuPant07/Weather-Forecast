@@ -18,10 +18,6 @@ function Home() {
   });
   const api_KEY = process.env.REACT_APP_API_KEY;
 
-  console.log(api_KEY)
-
-
-
   function calculateAQI(pollutants) {
     const aqiValues = {};
 
@@ -103,7 +99,7 @@ function Home() {
 
       if (weatherResponse.status === 200) {
         const { lat, lon } = weatherResponse.data.coord;
-        const pollutionResponse = await axios.get(`http://api.openweathermap.org/data/2.5/air_pollution?lat=${lat}&lon=${lon}&appid=${api_KEY}`);
+        const pollutionResponse = await axios.get(`https://api.openweathermap.org/data/2.5/air_pollution?lat=${lat}&lon=${lon}&appid=${api_KEY}`);
         console.log('Pollution Response:', pollutionResponse.data); // Debug log
 
         const components = pollutionResponse.data.list[0].components;
